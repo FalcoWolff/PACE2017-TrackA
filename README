@@ -45,7 +45,7 @@ enter your graph in the correct format (n is the number of vertices, m is the nu
 p tw <n> <m>
 <edge_1>
 <edge_2>
-\dots
+...
 <edge_m>
 
 With the following edge format
