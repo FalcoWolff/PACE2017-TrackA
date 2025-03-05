@@ -165,6 +165,16 @@ public class MainDecomposer {
   public static void main(String[] args) {
     Graph g = Graph.readGraph(System.in);
     TreeDecomposition td = decompose(g);
+
+    //addon to only display treewidth
+    if(args.length > 0) {
+      String option = args[0];
+      if(option.equals("only-tw")) {
+        System.out.println(td.width+1);
+        return;
+      }
+    }
+
     td.writeTo(System.out);
   }
 }
