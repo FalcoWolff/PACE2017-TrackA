@@ -170,7 +170,7 @@ public class MainDecomposer {
     if(args.length > 0) {
       String option = args[0];
       if(option.equals("only-tw")) {
-        System.out.println(td.width+1);
+        System.out.println(td.width);
         return;
       }
     }
